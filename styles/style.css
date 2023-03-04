@@ -1,0 +1,113 @@
+body {
+  font-family: "Kumbh Sans", "Sans-Serif";
+  background-color: hsl(185, 75%, 39%);
+  background-image: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 36vh right 52vw, top 52vh left 48vw;
+  color: hsl(227, 10%, 46%);
+  display: grid;
+  min-height: 100vh;
+  align-items: center;
+  justify-items: center;
+  margin: 0;
+}
+h1 {
+  color: hsl(229, 23%, 23%);
+  font-size: 1.2em;
+}
+hr {
+  color: hsl(0, 0%, 59%);
+  max-width: 100%;
+  margin: 1.5em 0;
+}
+#profile-card {
+  background-color: #fff;
+  position: absolute;
+  z-index: 1;
+  display: grid;
+  text-align: center;
+  border-radius: 15px;
+}
+.bg-card {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.content-wrapper {
+  display: grid;
+  position: relative;
+  z-index: 1;
+  margin-top: -3em;
+  max-height: 100%;
+  padding-bottom: 1.5em;
+}
+.profile-img {
+  display: grid;
+  justify-self: center;
+  border-radius: 100%;
+  border: 0.3em solid #fff;
+}
+.name-container {
+  display: grid;
+  justify-self: center;
+  width: 45%;
+  grid-template-columns: repeat(2, auto);
+  gap: 0.5em;
+  padding: 1em 0 0.5em 0;
+}
+.name {
+  grid-column: 1;
+  align-self: center;
+  justify-self: end;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.age {
+  grid-column: 2;
+  justify-self: start;
+  margin: 0;
+}
+.location {
+  padding: 0;
+  margin: 0;
+  justify-self: center;
+  align-self: center;
+  font-weight: 400;
+}
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0;
+}
+.stats-container h1 {
+  margin: 0;
+  padding: 0 0 0.2em 0;
+}
+.stats-container h6 {
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  padding: 0;
+  margin: 0;
+}
+.stat-followers {
+  grid-column: 1;
+}
+.stat-followers-label {
+  grid-column: 1;
+  grid-row: 2;
+}
+.stat-likes {
+  grid-column: 2;
+}
+.stat-likes-label {
+  grid-column: 2;
+  grid-row: 2;
+}
+.stat-photos {
+  grid-column: 3;
+}
+.stat-photos-label {
+  grid-column: 3;
+  grid-row: 2;
+}
